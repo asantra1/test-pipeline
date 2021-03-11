@@ -12,12 +12,12 @@ pipeline {
           - name: maven
             image: maven:alpine
             command:
-            - cat
+            - sleep 4800
             tty: true
           - name: busybox
             image: busybox
             command:
-            - cat
+            - sleep 4800
             tty: true
         """.stripIndent()
     }
