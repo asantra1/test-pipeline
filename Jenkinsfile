@@ -11,13 +11,11 @@ pipeline {
           containers:
           - name: maven
             image: maven:alpine
-            command:
-            - sleep 4800
+            command: ["sleep", "4800"]
             tty: true
           - name: busybox
             image: busybox
-            command:
-            - sleep 4800
+            command: ["sleep", "4800"]
             tty: true
         """.stripIndent()
     }
