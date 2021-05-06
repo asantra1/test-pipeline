@@ -24,7 +24,7 @@ podTemplate(label: 'veracode-example-builder', // See 1
             pwd
             ls -l .
             ls -l /home/jenkins/agent/workspace
-            
+            ./gradlew build
         """
       }
     }
