@@ -20,6 +20,8 @@ podTemplate(label: 'veracode-example-builder', // See 1
       container('gradle') {
         sh """
             gradle --version
+            pwd
+            ls -l .
             ls -l /home/jenkins/agent/workspace
             
         """
