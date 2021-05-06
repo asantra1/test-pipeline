@@ -1,4 +1,5 @@
-podTemplate(label: 'veracode-example-builder', // See 1
+podTemplate(label: 'veracode-example-builder',// See 1
+  podRetention: never(),
   containers: [
     containerTemplate(
       name: 'jnlp',
