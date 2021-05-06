@@ -17,7 +17,7 @@ podTemplate(label: 'veracode-example-builder', // See 1
   node ('veracode-example-builder') {
 
     stage ('gradle version') { // See 4
-      git 'git@github.com:asantra1/anir-rest-service.git'
+      git credentialsId: 'a75beb49-bd78-433f-aa8b-a281f6dd22f2', url: 'https://github.com/asantra1/anir-rest-service.git'
       container('gradle') {
         sh """
             gradle --version
