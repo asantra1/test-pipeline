@@ -18,9 +18,9 @@ podTemplate(label: 'veracode-example-builder', // See 1
 
     stage ('gradle version') { // See 4
       container('gradle') {
-        sh '
+        sh """
             gradle --version
-        '
+        """
       }
     }
   }
